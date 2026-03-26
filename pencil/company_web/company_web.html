@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>华卓科技 - 赋能餐饮企业数字化转型</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0D6E6E;
+            --primary-light: #0D6E6E1A;
+            --text-dark: #1A1A1A;
+            --text-gray: #666666;
+            --text-light: #AAAAAA;
+            --bg-white: #FFFFFF;
+            --bg-light: #FAFAFA;
+            --bg-dark: #1A1A1A;
+            --border-radius-sm: 8px;
+            --border-radius-md: 12px;
+            --border-radius-lg: 20px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--bg-white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 120px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background: var(--bg-white);
+            z-index: 1000;
+            box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+        }
+
+        .header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            border-radius: var(--border-radius-sm);
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .nav {
+            display: flex;
+            gap: 40px;
+        }
+
+        .nav a {
+            font-size: 15px;
+            color: var(--text-gray);
+            transition: color 0.2s;
+        }
+
+        .nav a:hover {
+            color: var(--primary);
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            background: var(--primary);
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+            border-radius: var(--border-radius-sm);
+            transition: background 0.2s;
+        }
+
+        .cta-button:hover {
+            background: #0a5a5a;
+        }
+
+        .hero {
+            padding: 200px 0 120px;
+            background: var(--bg-white);
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            background: var(--primary-light);
+            color: var(--primary);
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: var(--border-radius-lg);
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            max-width: 700px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: var(--text-gray);
+            line-height: 1.6;
+            margin-bottom: 40px;
+            max-width: 600px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            padding: 16px 32px;
+            background: var(--primary);
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: var(--border-radius-sm);
+            transition: background 0.2s;
+        }
+
+        .btn-primary:hover {
+            background: #0a5a5a;
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            padding: 16px 32px;
+            background: #F0F0F0;
+            color: var(--text-dark);
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: var(--border-radius-sm);
+            transition: background 0.2s;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .section-header p {
+            font-size: 18px;
+            color: var(--text-gray);
+        }
+
+        .features-section {
+            background: var(--bg-light);
+        }
+
+        .features-grid {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+        }
+
+        .feature-card {
+            width: 320px;
+            padding: 32px;
+            background: var(--bg-white);
+            border-radius: var(--border-radius-md);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .feature-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--primary-light);
+            border-radius: var(--border-radius-md);
+        }
+
+        .feature-card h3 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .feature-card p {
+            font-size: 15px;
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+
+        .stats-section {
+            background: var(--bg-white);
+        }
+
+        .stats-grid {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 56px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 16px;
+            color: var(--text-gray);
+        }
+
+        .testimonials-section {
+            background: var(--bg-light);
+        }
+
+        .testimonials-grid {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+        }
+
+        .testimonial-card {
+            width: 360px;
+            padding: 32px;
+            background: var(--bg-white);
+            border-radius: var(--border-radius-md);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .testimonial-card blockquote {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .testimonial-card cite {
+            font-size: 14px;
+            color: var(--text-gray);
+            font-style: normal;
+        }
+
+        .cta-section {
+            background: var(--primary);
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 40px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 16px;
+        }
+
+        .cta-section p {
+            font-size: 18px;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 32px;
+        }
+
+        .cta-section .btn-white {
+            display: inline-flex;
+            align-items: center;
+            padding: 18px 40px;
+            background: white;
+            color: var(--primary);
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: var(--border-radius-sm);
+            transition: background 0.2s;
+        }
+
+        .cta-section .btn-white:hover {
+            background: #f0f0f0;
+        }
+
+        .footer {
+            background: var(--bg-dark);
+            padding: 60px 0 40px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 80px;
+        }
+
+        .footer-logo {
+            width: 240px;
+        }
+
+        .footer-logo h3 {
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 16px;
+        }
+
+        .footer-logo p {
+            font-size: 14px;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 80px;
+        }
+
+        .footer-links-group h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 12px;
+        }
+
+        .footer-links-group a {
+            display: block;
+            font-size: 14px;
+            color: var(--text-light);
+            margin-bottom: 12px;
+            transition: color 0.2s;
+        }
+
+        .footer-links-group a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            height: 1px;
+            background: #333;
+            margin-bottom: 24px;
+        }
+
+        .footer-copyright {
+            font-size: 14px;
+            color: var(--text-gray);
+            text-align: center;
+        }
+
+        .gap-40 {
+            gap: 40px;
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                padding: 0 40px;
+            }
+
+            .features-grid,
+            .testimonials-grid {
+                flex-wrap: wrap;
+            }
+
+            .stats-grid {
+                flex-wrap: wrap;
+                gap: 40px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .footer-links {
+                flex-wrap: wrap;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 24px;
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .hero {
+                padding: 160px 0 80px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .section-header h2 {
+                font-size: 28px;
+            }
+
+            .feature-card,
+            .testimonial-card {
+                width: 100%;
+            }
+
+            .stat-value {
+                font-size: 40px;
+            }
+
+            .cta-section h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">华卓科技</span>
+            </a>
+            <nav class="nav">
+                <a href="#">首页</a>
+                <a href="#">产品</a>
+                <a href="#">解决方案</a>
+                <a href="#">关于我们</a>
+            </nav>
+            <a href="#" class="cta-button">免费试用</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">🚀 智能餐饮管理系统</div>
+            <h1>赋能餐饮企业<br>实现数字化转型</h1>
+            <p>一站式智慧餐厅解决方案，从点餐、收银到库存管理，帮助餐饮企业提升运营效率，降低管理成本</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn-primary">立即开始</a>
+                <a href="#" class="btn-secondary">预约演示</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>核心功能</h2>
+                <p>全方位赋能餐饮企业数字化运营</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>智能点餐</h3>
+                    <p>支持扫码点餐、自助点餐机、小程序等多种点餐方式，提升顾客体验</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>智能收银</h3>
+                    <p>快速结账、多种支付方式、自动对账，提高收银效率，减少差错</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>库存管理</h3>
+                    <p>实时库存监控、智能预警、自动补货，降低库存成本，避免浪费</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value">10000+</div>
+                    <div class="stat-label">服务门店</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">500 万+</div>
+                    <div class="stat-label">日均订单</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">99.9%</div>
+                    <div class="stat-label">系统稳定性</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">24/7</div>
+                    <div class="stat-label">技术支持</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>客户评价</h2>
+                <p>听听我们的客户怎么说</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <blockquote>"使用华卓系统后，我们的运营效率提升了 50%，顾客满意度也大幅提高。这绝对是我们做过最好的投资！"</blockquote>
+                    <cite>— 张先生，某连锁餐厅 CEO</cite>
+                </div>
+                <div class="testimonial-card">
+                    <blockquote>"系统非常稳定，功能强大。特别是库存管理模块，帮我们减少了 30% 的食材浪费。"</blockquote>
+                    <cite>— 李女士，餐饮集团运营总监</cite>
+                </div>
+                <div class="testimonial-card">
+                    <blockquote>"24 小时技术支持响应迅速，让我们非常安心。华卓是值得信赖的合作伙伴。"</blockquote>
+                    <cite>— 王先生，酒店总经理</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section cta-section">
+        <div class="container">
+            <h2>准备好开始数字化转型了吗？</h2>
+            <p>立即联系我们，获取专属解决方案</p>
+            <a href="#" class="btn-white">免费试用</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>华卓科技</h3>
+                    <p>赋能餐饮企业数字化转型</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-group">
+                        <h4>产品</h4>
+                        <a href="#">智能点餐</a>
+                        <a href="#">智能收银</a>
+                        <a href="#">库存管理</a>
+                    </div>
+                    <div class="footer-links-group">
+                        <h4>公司</h4>
+                        <a href="#">关于我们</a>
+                        <a href="#">联系我们</a>
+                        <a href="#">加入我们</a>
+                    </div>
+                    <div class="footer-links-group">
+                        <h4>支持</h4>
+                        <a href="#">帮助中心</a>
+                        <a href="#">技术文档</a>
+                        <a href="#">隐私政策</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom"></div>
+            <p class="footer-copyright">© 2024 华卓科技。All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            } else {
+                header.style.boxShadow = '0 1px 0 rgba(0,0,0,0.05)';
+            }
+        });
+    </script>
+</body>
+</html>
