@@ -1,0 +1,952 @@
+{
+  "version": "2.9",
+  "children": [
+    {
+      "type": "frame",
+      "id": "JBSLn",
+      "x": 0,
+      "y": 0,
+      "name": "新闻列表",
+      "width": 393,
+      "height": 852,
+      "fill": "#FFFFFF",
+      "children": [
+        {
+          "type": "frame",
+          "id": "ntFkP",
+          "name": "状态栏",
+          "width": 393,
+          "height": 62,
+          "fill": "#FFFFFF",
+          "children": [
+            {
+              "type": "text",
+              "id": "jNVrq",
+              "name": "时间",
+              "fill": "#000000",
+              "content": "9:41",
+              "fontFamily": "SF Pro",
+              "fontSize": 17,
+              "fontWeight": "600"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "PvsT4",
+      "x": 0,
+      "y": 0,
+      "name": "新闻列表",
+      "width": 393,
+      "height": 852,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "SlSVC",
+          "name": "状态栏",
+          "width": "fill_container",
+          "height": 62,
+          "fill": "#FFFFFF",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "RTpn0",
+              "name": "时间",
+              "fill": "#000000",
+              "content": "9:41",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "vlypX",
+          "name": "导航栏",
+          "width": "fill_container",
+          "height": 60,
+          "fill": "#FFFFFF",
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "s9eCB",
+              "name": "返回按钮",
+              "width": 40,
+              "height": 40,
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "hq4Gn",
+                  "name": "返回图标",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "arrow-left",
+                  "iconFontFamily": "lucide",
+                  "fill": "#000000"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "5UTTM",
+              "name": "页面标题",
+              "fill": "#000000",
+              "content": "新闻",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "ssBRi",
+              "name": "占位",
+              "width": 40,
+              "height": 40
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Lz34A",
+          "name": "列表内容",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "bSp78",
+              "name": "新闻项 1",
+              "width": "fill_container",
+              "height": 120,
+              "fill": "#F5F5F5",
+              "cornerRadius": 8,
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "fikya",
+                  "name": "新闻图片",
+                  "width": 120,
+                  "height": 120,
+                  "fill": "#E0E0E0",
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "frame",
+                  "id": "XfJXa",
+                  "name": "新闻信息",
+                  "width": "fill_container",
+                  "height": 88,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "plRwC",
+                      "name": "新闻标题",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "2024 年科技创新大会在北京成功举办，多位行业领袖发表演讲",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "h6LRP",
+                      "name": "发布日期",
+                      "fill": "#999999",
+                      "content": "2024-03-20",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rnktV",
+              "name": "新闻项 2",
+              "width": "fill_container",
+              "height": 120,
+              "fill": "#F5F5F5",
+              "cornerRadius": 8,
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "vlkUB",
+                  "name": "新闻图片",
+                  "width": 120,
+                  "height": 120,
+                  "fill": "#E0E0E0",
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "frame",
+                  "id": "oO2hC",
+                  "name": "新闻信息",
+                  "width": "fill_container",
+                  "height": 88,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jK0UD",
+                      "name": "新闻标题",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "人工智能技术助力医疗行业发展，诊断准确率大幅提升",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "S8jFk",
+                      "name": "发布日期",
+                      "fill": "#999999",
+                      "content": "2024-03-19",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ZOyUo",
+              "name": "新闻项 3",
+              "width": "fill_container",
+              "height": 120,
+              "fill": "#F5F5F5",
+              "cornerRadius": 8,
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tNRF9",
+                  "name": "新闻图片",
+                  "width": 120,
+                  "height": 120,
+                  "fill": "#E0E0E0",
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "frame",
+                  "id": "89fAa",
+                  "name": "新闻信息",
+                  "width": "fill_container",
+                  "height": 88,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uny5V",
+                      "name": "新闻标题",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "新能源汽车市场持续增长，销量再创新高",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "kIurt",
+                      "name": "发布日期",
+                      "fill": "#999999",
+                      "content": "2024-03-18",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "yDhbw",
+              "name": "新闻项 4",
+              "width": "fill_container",
+              "height": 120,
+              "fill": "#F5F5F5",
+              "cornerRadius": 8,
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "rIYF8",
+                  "name": "新闻图片",
+                  "width": 120,
+                  "height": 120,
+                  "fill": "#E0E0E0",
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "frame",
+                  "id": "6vBGb",
+                  "name": "新闻信息",
+                  "width": "fill_container",
+                  "height": 88,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "r0jeQ",
+                      "name": "新闻标题",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "5G 网络覆盖范围扩大，智慧城市应用加速落地",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "s6iK1",
+                      "name": "发布日期",
+                      "fill": "#999999",
+                      "content": "2024-03-17",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "oUlXE",
+              "name": "新闻项 5",
+              "width": "fill_container",
+              "height": 120,
+              "fill": "#F5F5F5",
+              "cornerRadius": 8,
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "NsxlN",
+                  "name": "新闻图片",
+                  "width": 120,
+                  "height": 120,
+                  "fill": "#E0E0E0",
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "frame",
+                  "id": "hrTab",
+                  "name": "新闻信息",
+                  "width": "fill_container",
+                  "height": 88,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "1XK3t",
+                      "name": "新闻标题",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "全球科技巨头发布最新产品，引发市场热议",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "muwed",
+                      "name": "发布日期",
+                      "fill": "#999999",
+                      "content": "2024-03-16",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "RTjRD",
+      "x": 480,
+      "y": 0,
+      "name": "新闻详情",
+      "width": 393,
+      "height": 1515,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "M3ks4",
+          "name": "状态栏",
+          "width": "fill_container",
+          "height": 62,
+          "fill": "#FFFFFF",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "6OWPs",
+              "name": "时间",
+              "fill": "#000000",
+              "content": "9:41",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Zs2O5",
+          "name": "导航栏",
+          "width": "fill_container",
+          "height": 60,
+          "fill": "#FFFFFF",
+          "gap": 16,
+          "padding": [
+            0,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "n4CcO",
+              "name": "返回按钮",
+              "width": 40,
+              "height": 40,
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "TQGVY",
+                  "name": "返回图标",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "arrow-left",
+                  "iconFontFamily": "lucide",
+                  "fill": "#000000"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "EMyLr",
+              "name": "页面标题",
+              "fill": "#000000",
+              "content": "新闻详情",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xulQ0",
+          "name": "详情内容",
+          "width": "fill_container",
+          "height": 1504,
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "rX74f",
+              "name": "新闻头图",
+              "width": "fill_container",
+              "height": 240,
+              "fill": "#E0E0E0"
+            },
+            {
+              "type": "frame",
+              "id": "PoHJv",
+              "name": "文章内容",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "padding": [
+                24,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ZffQl",
+                  "name": "新闻标题",
+                  "fill": "#1A1A1A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "2024 年科技创新大会在北京成功举办，多位行业领袖发表演讲",
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "DJACS",
+                  "name": "发布信息",
+                  "width": "fill_container",
+                  "height": 40,
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xthFp",
+                      "name": "发布日期",
+                      "fill": "#999999",
+                      "content": "2024-03-20 14:30",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "oE8tb",
+                      "name": "来源",
+                      "fill": "#999999",
+                      "content": "科技日报",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "bipva",
+                  "name": "正文段落 1",
+                  "fill": "#333333",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "【北京讯】2024 年科技创新大会于今日在北京国家会议中心隆重开幕。本次大会以创新驱动发展，科技引领未来为主题，吸引了来自全球 30 多个国家和地区的 500 余位科技界领袖、企业家和专家学者参会。",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "cmKXa",
+                  "name": "正文段落 2",
+                  "fill": "#333333",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "大会开幕式上，多位行业领袖发表了主旨演讲。他们围绕人工智能、量子计算、生物技术、新能源等前沿领域，分享了最新的科研成果和产业应用案例。",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "JDtat",
+                  "name": "文中图片",
+                  "width": "fill_container",
+                  "height": 200,
+                  "fill": "#E0E0E0",
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "UaZ69",
+                  "name": "正文段落 3",
+                  "fill": "#333333",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "与会专家指出，当前全球科技创新正呈现出跨界融合、加速迭代的显著特征。科技创新不仅是推动经济增长的核心动力，更是解决人类面临的共同挑战的关键所在。",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "bEZSz",
+                  "name": "正文段落 4",
+                  "fill": "#333333",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "在圆桌论坛环节，与会嘉宾就科技创新与产业升级、人才培养与国际合作、科技伦理与社会责任等议题展开了深入讨论。大家一致认为，加强国际合作、优化创新生态、完善政策支持体系，是推动科技创新可持续发展的关键。",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "GxqRm",
+                  "name": "小标题",
+                  "fill": "#1A1A1A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "重点成果展示",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "wCqtw",
+                  "name": "正文段落 5",
+                  "fill": "#333333",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "本次大会还设置了多个专题论坛和展览展示环节，集中展示了我国在人工智能、5G 通信、航空航天、生物医药等领域取得的一系列重大科技成果。",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "h3nPb",
+      "x": 480,
+      "y": 1589,
+      "name": "评论区域",
+      "width": "fill_container(393)",
+      "height": 384,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 16,
+      "padding": 16,
+      "children": [
+        {
+          "type": "text",
+          "id": "1JRrR",
+          "name": "评论标题",
+          "fill": "#1A1A1A",
+          "content": "评论 (3)",
+          "fontFamily": "Inter",
+          "fontSize": 18,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "E91He",
+          "name": "评论列表",
+          "width": "fill_container",
+          "height": 180,
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "frame",
+              "id": "3T0gX",
+              "name": "评论 1",
+              "width": "fill_container",
+              "height": 56,
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "yC8pb",
+                  "name": "头像 1",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "#E0E0E0",
+                  "cornerRadius": 20
+                },
+                {
+                  "type": "frame",
+                  "id": "U2O3R",
+                  "name": "评论内容 1",
+                  "width": "fill_container",
+                  "height": 56,
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "JjspV",
+                      "name": "用户名 1",
+                      "fill": "#1A1A1A",
+                      "content": "张三",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "zWZoQ",
+                      "name": "评论文本 1",
+                      "fill": "#666666",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "文章写得很好，学到了很多！",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "mH9m7",
+                      "name": "评论日期 1",
+                      "fill": "#999999",
+                      "content": "2024-03-20",
+                      "fontFamily": "Inter",
+                      "fontSize": 11
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "36WMd",
+              "name": "评论 2",
+              "width": "fill_container",
+              "height": 56,
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "gOerO",
+                  "name": "头像 2",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "#E0E0E0",
+                  "cornerRadius": 20
+                },
+                {
+                  "type": "frame",
+                  "id": "yklVS",
+                  "name": "评论内容 2",
+                  "width": "fill_container",
+                  "height": 56,
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "X87gf",
+                      "name": "用户名 2",
+                      "fill": "#1A1A1A",
+                      "content": "李四",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jmm80",
+                      "name": "评论文本 2",
+                      "fill": "#666666",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "科技创新确实很重要，期待更多成果",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "4YYSc",
+                      "name": "评论日期 2",
+                      "fill": "#999999",
+                      "content": "2024-03-20",
+                      "fontFamily": "Inter",
+                      "fontSize": 11
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rUvRL",
+              "name": "评论 3",
+              "width": "fill_container",
+              "height": 56,
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "3Z1fF",
+                  "name": "头像 3",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "#E0E0E0",
+                  "cornerRadius": 20
+                },
+                {
+                  "type": "frame",
+                  "id": "zMbON",
+                  "name": "评论内容 3",
+                  "width": "fill_container",
+                  "height": 56,
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "cshXI",
+                      "name": "用户名 3",
+                      "fill": "#1A1A1A",
+                      "content": "王五",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pDLUP",
+                      "name": "评论文本 3",
+                      "fill": "#666666",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "大会内容很丰富，感谢分享",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "LgZam",
+                      "name": "评论日期 3",
+                      "fill": "#999999",
+                      "content": "2024-03-19",
+                      "fontFamily": "Inter",
+                      "fontSize": 11
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "nxmvb",
+          "name": "评论输入区",
+          "width": "fill_container",
+          "height": 60,
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "vzdQT",
+              "name": "用户头像",
+              "width": 40,
+              "height": 40,
+              "fill": "#E0E0E0",
+              "cornerRadius": 20
+            },
+            {
+              "type": "frame",
+              "id": "jaGlk",
+              "name": "输入框",
+              "width": "fill_container",
+              "height": 40,
+              "fill": "#F5F5F5",
+              "cornerRadius": 20,
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vJe5Q",
+                  "name": "占位文本",
+                  "fill": "#999999",
+                  "content": "写下你的评论...",
+                  "fontFamily": "Inter",
+                  "fontSize": 14
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "IkiRF",
+              "name": "发送按钮",
+              "width": 60,
+              "height": 40,
+              "fill": "#007AFF",
+              "cornerRadius": 20,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jpOJo",
+                  "name": "发送",
+                  "fill": "#FFFFFF",
+                  "content": "发送",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

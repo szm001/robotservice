@@ -1,0 +1,1036 @@
+{
+  "version": "2.9",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Frame",
+      "clip": true,
+      "width": 800,
+      "height": 600,
+      "fill": "#FFFFFF",
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "NWpKv",
+      "x": 0,
+      "y": 0,
+      "name": "Enterprise Website",
+      "width": 1440,
+      "fill": "#FAFAFA",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "ROhBq",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#FFFFFF",
+          "padding": [
+            0,
+            60
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "a0gvO",
+              "name": "Logo",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 8,
+                  "id": "ZAMiy",
+                  "name": "logoIcon",
+                  "fill": "#0D6E6E",
+                  "width": 40,
+                  "height": 40
+                },
+                {
+                  "type": "text",
+                  "id": "xu46n",
+                  "name": "logoText",
+                  "fill": "#1A1A1A",
+                  "content": "华卓科技",
+                  "fontFamily": "Inter",
+                  "fontSize": 24,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "yVrwv",
+              "name": "Navigation",
+              "gap": 40,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "oPlSA",
+                  "name": "navItem1",
+                  "fill": "#666666",
+                  "content": "首页",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "rUByj",
+                  "name": "navItem2",
+                  "fill": "#666666",
+                  "content": "产品",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "eWdgn",
+                  "name": "navItem3",
+                  "fill": "#666666",
+                  "content": "解决方案",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "oaqDI",
+                  "name": "navItem4",
+                  "fill": "#666666",
+                  "content": "关于我们",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Eu0g9",
+              "name": "CTA Button",
+              "fill": "#0D6E6E",
+              "cornerRadius": 8,
+              "padding": [
+                12,
+                24
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bgndy",
+                  "name": "ctaText",
+                  "fill": "#FFFFFF",
+                  "content": "免费试用",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "medium"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "eXzDp",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            80,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "QVcdH",
+              "name": "heroBadge",
+              "fill": "#0D6E6E1A",
+              "cornerRadius": 20,
+              "padding": [
+                8,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "XWeeY",
+                  "name": "badgeText",
+                  "fill": "#0D6E6E",
+                  "content": "🚀 智能餐饮管理系统",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "medium"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "q3QCO",
+              "name": "heroHeadline",
+              "fill": "#1A1A1A",
+              "content": "赋能餐饮企业\n实现数字化转型",
+              "lineHeight": 1.1,
+              "fontFamily": "Inter",
+              "fontSize": 56,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "1R4dL",
+              "name": "heroSubline",
+              "fill": "#666666",
+              "content": "一站式智慧餐厅解决方案，从点餐、收银到库存管理，帮助餐饮企业提升运营效率，降低管理成本",
+              "lineHeight": 1.6,
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "0FMhW",
+              "name": "CTA Buttons",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "rBF2d",
+                  "name": "primaryCTA",
+                  "fill": "#0D6E6E",
+                  "cornerRadius": 8,
+                  "padding": [
+                    16,
+                    32
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wReQY",
+                      "name": "primaryCTAText",
+                      "fill": "#FFFFFF",
+                      "content": "立即开始",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Jrhgs",
+                  "name": "secondaryCTA",
+                  "fill": "#F0F0F0",
+                  "cornerRadius": 8,
+                  "padding": [
+                    16,
+                    32
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pjONW",
+                      "name": "secondaryCTAText",
+                      "fill": "#1A1A1A",
+                      "content": "预约演示",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "medium"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "W2OUb",
+          "name": "Features Section",
+          "width": "fill_container",
+          "fill": "#FAFAFA",
+          "layout": "vertical",
+          "gap": 60,
+          "padding": [
+            80,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "xzMQM",
+              "name": "featuresHeader",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bZyJK",
+                  "name": "featuresTitle",
+                  "fill": "#1A1A1A",
+                  "content": "核心功能",
+                  "fontFamily": "Inter",
+                  "fontSize": 40,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "dA7Tl",
+                  "name": "featuresSubtitle",
+                  "fill": "#666666",
+                  "content": "全方位赋能餐饮企业数字化运营",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "UgqcF",
+              "name": "Features Grid",
+              "gap": 32,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "5dXAz",
+                  "name": "featureCard1",
+                  "width": 320,
+                  "height": 280,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 12,
+                      "id": "JnjpK",
+                      "name": "featureIcon1",
+                      "fill": "#0D6E6E1A",
+                      "width": 56,
+                      "height": 56
+                    },
+                    {
+                      "type": "text",
+                      "id": "Zjmql",
+                      "name": "featureTitle1",
+                      "fill": "#1A1A1A",
+                      "content": "智能点餐",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "semibold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PoLA4",
+                      "name": "featureDesc1",
+                      "fill": "#666666",
+                      "content": "支持扫码点餐、自助点餐机、小程序等多种点餐方式，提升顾客体验",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sFnJf",
+                  "name": "featureCard2",
+                  "width": 320,
+                  "height": 280,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 12,
+                      "id": "iC91E",
+                      "name": "featureIcon2",
+                      "fill": "#0D6E6E1A",
+                      "width": 56,
+                      "height": 56
+                    },
+                    {
+                      "type": "text",
+                      "id": "MRyny",
+                      "name": "featureTitle2",
+                      "fill": "#1A1A1A",
+                      "content": "智能收银",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "semibold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "KCs9P",
+                      "name": "featureDesc2",
+                      "fill": "#666666",
+                      "content": "快速结账、多种支付方式、自动对账，提高收银效率，减少差错",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lM46V",
+                  "name": "featureCard3",
+                  "width": 320,
+                  "height": 280,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 12,
+                      "id": "Df8ec",
+                      "name": "featureIcon3",
+                      "fill": "#0D6E6E1A",
+                      "width": 56,
+                      "height": 56
+                    },
+                    {
+                      "type": "text",
+                      "id": "L0SJE",
+                      "name": "featureTitle3",
+                      "fill": "#1A1A1A",
+                      "content": "库存管理",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "semibold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CuYAq",
+                      "name": "featureDesc3",
+                      "fill": "#666666",
+                      "content": "实时库存监控、智能预警、自动补货，降低库存成本，避免浪费",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "9Cm64",
+          "name": "Stats Section",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 60,
+          "padding": [
+            80,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "RnUev",
+              "name": "Stats Grid",
+              "gap": 80,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "wXnej",
+                  "name": "statItem1",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "W0pqu",
+                      "name": "statValue1",
+                      "fill": "#0D6E6E",
+                      "content": "10000+",
+                      "fontFamily": "Inter",
+                      "fontSize": 56,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "duWlX",
+                      "name": "statLabel1",
+                      "fill": "#666666",
+                      "content": "服务门店",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "D5JSO",
+                  "name": "statItem2",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "5XsVY",
+                      "name": "statValue2",
+                      "fill": "#0D6E6E",
+                      "content": "500 万+",
+                      "fontFamily": "Inter",
+                      "fontSize": 56,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "02Lbn",
+                      "name": "statLabel2",
+                      "fill": "#666666",
+                      "content": "日均订单",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "33tC8",
+                  "name": "statItem3",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "GFxDz",
+                      "name": "statValue3",
+                      "fill": "#0D6E6E",
+                      "content": "99.9%",
+                      "fontFamily": "Inter",
+                      "fontSize": 56,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "hnJ0P",
+                      "name": "statLabel3",
+                      "fill": "#666666",
+                      "content": "系统稳定性",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Ocawh",
+                  "name": "statItem4",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "80tmr",
+                      "name": "statValue4",
+                      "fill": "#0D6E6E",
+                      "content": "24/7",
+                      "fontFamily": "Inter",
+                      "fontSize": 56,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "4PfhF",
+                      "name": "statLabel4",
+                      "fill": "#666666",
+                      "content": "技术支持",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "PokMO",
+          "name": "Testimonials Section",
+          "width": "fill_container",
+          "fill": "#FAFAFA",
+          "layout": "vertical",
+          "gap": 60,
+          "padding": [
+            80,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "mNGLX",
+              "name": "testimonialsHeader",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "CRvJW",
+                  "name": "testimonialsTitle",
+                  "fill": "#1A1A1A",
+                  "content": "客户评价",
+                  "fontFamily": "Inter",
+                  "fontSize": 40,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "kT97X",
+                  "name": "testimonialsSubtitle",
+                  "fill": "#666666",
+                  "content": "听听我们的客户怎么说",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "1qn6I",
+              "name": "Testimonials Grid",
+              "gap": 32,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "NF4dl",
+                  "name": "testimonialCard1",
+                  "width": 360,
+                  "height": 240,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pGY9w",
+                      "name": "quote1",
+                      "fill": "#333333",
+                      "content": "\"使用华卓系统后，我们的运营效率提升了 50%，顾客满意度也大幅提高。这绝对是我们做过最好的投资！\"",
+                      "lineHeight": 1.8,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "DUaVM",
+                      "name": "author1",
+                      "fill": "#666666",
+                      "content": "— 张先生，某连锁餐厅 CEO",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mz4yb",
+                  "name": "testimonialCard2",
+                  "width": 360,
+                  "height": 240,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "iPxky",
+                      "name": "quote2",
+                      "fill": "#333333",
+                      "content": "\"系统非常稳定，功能强大。特别是库存管理模块，帮我们减少了 30% 的食材浪费。\"",
+                      "lineHeight": 1.8,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "hRoUx",
+                      "name": "author2",
+                      "fill": "#666666",
+                      "content": "— 李女士，餐饮集团运营总监",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zbXl8",
+                  "name": "testimonialCard3",
+                  "width": 360,
+                  "height": 240,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kQP21",
+                      "name": "quote3",
+                      "fill": "#333333",
+                      "content": "\"24 小时技术支持响应迅速，让我们非常安心。华卓是值得信赖的合作伙伴。\"",
+                      "lineHeight": 1.8,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Qg4fc",
+                      "name": "author3",
+                      "fill": "#666666",
+                      "content": "— 王先生，酒店总经理",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "cqh8w",
+          "name": "CTA Section",
+          "width": "fill_container",
+          "fill": "#0D6E6E",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            80,
+            120
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "1ca6x",
+              "name": "ctaTitle",
+              "fill": "#FFFFFF",
+              "content": "准备好开始数字化转型了吗？",
+              "fontFamily": "Inter",
+              "fontSize": 40,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "QvMN1",
+              "name": "ctaSubtitle",
+              "opacity": 0.9,
+              "fill": "#FFFFFF",
+              "content": "立即联系我们，获取专属解决方案",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "L3mBX",
+              "name": "ctaButton",
+              "fill": "#FFFFFF",
+              "cornerRadius": 8,
+              "padding": [
+                18,
+                40
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dV52M",
+                  "name": "ctaButtonText",
+                  "fill": "#0D6E6E",
+                  "content": "免费试用",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "semibold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "7oE0F",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#1A1A1A",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            60,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "LGOoK",
+              "name": "Footer Content",
+              "gap": 80,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "DAVld",
+                  "name": "footerLogo",
+                  "width": 240,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "9uO17",
+                      "name": "footerLogoText",
+                      "fill": "#FFFFFF",
+                      "content": "华卓科技",
+                      "fontFamily": "Inter",
+                      "fontSize": 24,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jxdQx",
+                      "name": "footerTagline",
+                      "fill": "#AAAAAA",
+                      "content": "赋能餐饮企业数字化转型",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "3pyu9",
+                  "name": "Footer Links",
+                  "gap": 80,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "JOKxb",
+                      "name": "footerLinks1",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "9DDrW",
+                          "name": "links1Title",
+                          "fill": "#FFFFFF",
+                          "content": "产品",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "semibold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dcPkH",
+                          "name": "link1_1",
+                          "fill": "#AAAAAA",
+                          "content": "智能点餐",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "oOWDR",
+                          "name": "link1_2",
+                          "fill": "#AAAAAA",
+                          "content": "智能收银",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "483O8",
+                          "name": "link1_3",
+                          "fill": "#AAAAAA",
+                          "content": "库存管理",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nVUS1",
+                      "name": "footerLinks2",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "1n7QP",
+                          "name": "links2Title",
+                          "fill": "#FFFFFF",
+                          "content": "公司",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "semibold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "f1j94",
+                          "name": "link2_1",
+                          "fill": "#AAAAAA",
+                          "content": "关于我们",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "JK2cY",
+                          "name": "link2_2",
+                          "fill": "#AAAAAA",
+                          "content": "联系我们",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Q6vOe",
+                          "name": "link2_3",
+                          "fill": "#AAAAAA",
+                          "content": "加入我们",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Rc86v",
+                      "name": "footerLinks3",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "E0onH",
+                          "name": "links3Title",
+                          "fill": "#FFFFFF",
+                          "content": "支持",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "semibold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Sy9ea",
+                          "name": "link3_1",
+                          "fill": "#AAAAAA",
+                          "content": "帮助中心",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "yVczD",
+                          "name": "link3_2",
+                          "fill": "#AAAAAA",
+                          "content": "技术文档",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "lgl6X",
+                          "name": "link3_3",
+                          "fill": "#AAAAAA",
+                          "content": "隐私政策",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "BSbM7",
+              "name": "footerBottom",
+              "fill": "#333333",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "text",
+              "id": "eld7H",
+              "name": "footerCopyright",
+              "fill": "#666666",
+              "content": "© 2024 华卓科技。All rights reserved.",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
